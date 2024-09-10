@@ -9,6 +9,13 @@ using Avalonia.Reactive;
 
 namespace DataGridRowSelectionBinding.Behaviors;
 
+/// <summary>
+/// Defines a <see cref="SynchronizeSelectionProperty"/> attached property which synchronizes the
+/// row selection state of a <see cref="DataGrid"/> with a property on a row data item.
+/// </summary>
+/// <remarks>
+/// The type for each row data model must implement the <see cref="ISelectable"/> interface.
+/// </remarks>
 internal static class DataGridExtensions
 {
     public static readonly AttachedProperty<bool> SynchronizeSelectionProperty =
