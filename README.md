@@ -2,7 +2,7 @@
 
 This repository contains an example using a XAML behavior to synchronize the selection of rows in a DataGrid with a ViewModel in WPF.
 
-It defines a [`DataGridExtensions.SynchronizeSelection`](DataGridRowSelectionBinding/Behaviors/DataGridExtensions.axaml) attached property that can be set on a `DataGrid`:
+It defines a [`DataGridExtensions.SynchronizeSelection`](DataGridRowSelectionBinding/Behaviors/DataGridExtensions.cs) attached property that can be set on a `DataGrid`:
 
 ```xml
 <DataGrid ItemsSource="{Binding Items}"
