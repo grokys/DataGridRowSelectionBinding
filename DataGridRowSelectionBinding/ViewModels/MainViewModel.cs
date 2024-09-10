@@ -1,5 +1,5 @@
-﻿using System.Collections.ObjectModel;
-using System.Linq;
+﻿using System.Linq;
+using Avalonia.Collections;
 
 namespace DataGridRowSelectionBinding.ViewModels;
 
@@ -11,5 +11,5 @@ public partial class MainViewModel : ViewModelBase
             .Select(i => new ItemViewModel { Id = i, Name = $"Item {i}" }));
     }
 
-    public ObservableCollection<ItemViewModel> Items { get; }
+    public AvaloniaList<ItemViewModel> Items { get; }
 }
